@@ -8,7 +8,13 @@ body {
   padding: 0;
 }
 
-header, nav, main, footer, aside, section, article {
+header,
+nav,
+main,
+footer,
+aside,
+section,
+article {
   padding: 20px;
   margin: 10px auto;
   max-width: 1200px;
@@ -51,7 +57,7 @@ article {
   background-color: #eee;
   padding: 10px;
   border-left: 5px solid #444;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ESTILOS PERSONALIZADOS POR INTEGRANTE */
@@ -103,7 +109,7 @@ article {
   border-left: 5px solid #0f6864;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 #luciano article h3 {
@@ -128,15 +134,85 @@ article {
     max-width: 250px;
   }
 }
+
 /* 🔧 Ivan puede modificar esta parte */
+#ivan {
+  background-color: #fff4f4;
+  border: 2px solid #e25959;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(226, 89, 89, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#ivan:hover {
+  transform: scale(1.01);
+}
+
+#ivan h2 {
+  color: #a82323;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#ivan p {
+  line-height: 1.6;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+#ivan img {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+  border: 3px solid #a82323;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+#ivan img:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
 #ivan article {
-  background-color: #e25959; /* Ivan: cambiá color, bordes, etc. */
+  background-color: #e25959;
+  color: #fff;
+  border-left: 5px solid #a82323;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#ivan article h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#ivan article p {
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Responsive específico para Ivan */
+
+@media screen and (max-width: 480px) {
+  #ivan img {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
 /* 🔧 Aldo puede modificar esta parte */
 #Aldo {
-  background-color: #f3faff; 
-  border: 2px solid #79b1e8; 
+  background-color: #f3faff;
+  border: 2px solid #79b1e8;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(125, 172, 233, 0.2);
@@ -145,7 +221,8 @@ article {
 }
 
 #Aldo:hover {
-  transform: scale(1.01); /* Expande un poco al pasar el mouse */
+  transform: scale(1.01);
+  /* Expande un poco al pasar el mouse */
 }
 
 #Aldo h2 {
@@ -162,20 +239,21 @@ article {
   color: #333;
 }
 
-
 #Aldo article {
-  background-color: #dbeafe; 
+  background-color: #dbeafe;
   border-left: 5px solid #2a6db9;
   border-radius: 8px;
   padding: 15px;
   margin-top: 20px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #Aldo img {
   display: block;
-  margin: 0 auto 15px auto; /* Centra la imagen */
-  border: 3px solid #2a6db9;   /* Recuadro negro */
+  margin: 0 auto 15px auto;
+  /* Centra la imagen */
+  border: 3px solid #2a6db9;
+  /* Recuadro negro */
   border-radius: 8px;
   box-shadow: 2px 2px 8px #2a6db9;
 }
@@ -198,7 +276,8 @@ aside {
   background-color: #80df9b;
   padding: 15px;
   border-radius: 10px;
-  border: 3px solid #217a3a; /* Recuadro verde oscuro */
+  border: 3px solid #217a3a;
+  /* Recuadro verde oscuro */
   box-shadow: 2px 2px 8px #217a3a;
 }
 
@@ -210,7 +289,9 @@ table {
   margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #999;
 }
 
@@ -247,7 +328,10 @@ footer {
     font-size: 90%;
   }
 
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     padding: 10px;
   }
 }
