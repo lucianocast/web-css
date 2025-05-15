@@ -1,0 +1,197 @@
+/* ESTILOS GENERALES */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer, aside, section, article {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+/* HEADER */
+
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* NAV */
+
+nav {
+  background-color: #444;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* SECCIONES GENERALES */
+
+section img {
+  width: 200px;
+  border: 3px solid #444;
+}
+
+article {
+  background-color: #eee;
+  padding: 10px;
+  border-left: 5px solid #444;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ESTILOS PERSONALIZADOS POR INTEGRANTE */
+
+#luciano {
+  background-color: #eafaf9;
+  border: 2px solid #17cabb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(23, 202, 187, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#luciano:hover {
+  transform: scale(1.01);
+}
+
+#luciano h2 {
+  color: #0f6864;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#luciano p {
+  line-height: 1.6;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+#luciano img {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+  border: 3px solid #0f6864;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+#luciano img:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+#luciano article {
+  background-color: #17cabb;
+  color: #fff;
+  border-left: 5px solid #0f6864;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+#luciano article h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#luciano article p {
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Responsive específico para Luciano */
+
+@media screen and (max-width: 480px) {
+  #luciano img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+/* 🔧 Ivan puede modificar esta parte */
+#ivan article {
+  background-color: #e25959; /* Ivan: cambiá color, bordes, etc. */
+}
+
+/* 🔧 Aldo puede modificar esta parte */
+#persona3 article {
+  background-color: #5d9ce4; /* Aldo: cambiá color, bordes, etc. */
+}
+
+/* ASIDE */
+
+aside {
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* TABLA */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #999;
+}
+
+th {
+  background-color: #bbb;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 90%;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+}
