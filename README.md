@@ -1,7 +1,7 @@
 Grupo E:   Castillo Luciano, Gimenez Iván, Amarilla Aldo
 
 
-HTML5: Sitio en una Página 
+CSS
 
 Consigna: 
 1. Crear un archivo de estilos externo (estilos.css) y vincularlo correctamente a su archivo 
