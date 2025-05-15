@@ -23,27 +23,74 @@ article {
 /* HEADER */
 
 header {
-  background-color: #222;
-  color: rgb(255, 255, 255);
+  background-color: #111;
+  padding: 30px 20px;
   text-align: center;
+  color: white;
+  border-bottom: 4px solid #17cabb;
 }
 
-header img {
-  width: 100px;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-header {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(23, 202, 187, 0.5);
+}
+
+.titulo-header {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 /* NAV */
 
 nav {
-  background-color: #444;
-  text-align: center;
+  background-color: #333;
+  padding: 10px 0;
 }
 
-nav a {
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-nav li a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+.menu-nav li a:hover {
+  background-color: #17cabb;
+  color: #000;
+}
+
+/* Responsive nav */
+@media screen and (max-width: 480px) {
+  .menu-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 
 /* SECCIONES GENERALES */
@@ -105,7 +152,7 @@ article {
 
 #luciano article {
   background-color: #17cabb;
-  color: #fff;
+  color: #050202;
   border-left: 5px solid #0f6864;
   padding: 15px;
   border-radius: 8px;
@@ -283,29 +330,86 @@ aside {
 
 /* TABLA */
 
-table {
+#tabla-gustos {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.titulo-tabla {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.tabla-gustos {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-table,
-th,
-td {
-  border: 1px solid #999;
+.tabla-gustos th {
+  background-color: #17cabb;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
 }
 
-th {
-  background-color: #bbb;
+.tabla-gustos td {
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.tabla-gustos tr:nth-child(even) td {
+  background-color: #eafaf9;
+}
+
+.tabla-gustos tr:hover td {
+  background-color: #d7f3f0;
+  transition: background-color 0.3s ease;
 }
 
 /* FOOTER */
 
-footer {
-  background-color: #222;
-  color: white;
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 30px 20px;
   text-align: center;
-  padding: 20px;
+  font-size: 0.95em;
+  border-top: 4px solid #17cabb;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+.footer a {
+  color: #17cabb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #0f6864;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 0.9em;
+    padding: 20px 10px;
+  }
 }
 
 /* MEDIA QUERIES */
