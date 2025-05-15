@@ -18,7 +18,7 @@ header, nav, main, footer, aside, section, article {
 
 header {
   background-color: #222;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -134,16 +134,72 @@ article {
 }
 
 /* 🔧 Aldo puede modificar esta parte */
-#persona3 article {
-  background-color: #5d9ce4; /* Aldo: cambiá color, bordes, etc. */
+#Aldo {
+  background-color: #f3faff; 
+  border: 2px solid #79b1e8; 
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(125, 172, 233, 0.2);
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+#Aldo:hover {
+  transform: scale(1.01); /* Expande un poco al pasar el mouse */
+}
+
+#Aldo h2 {
+  color: #2a6db9;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#Aldo p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+
+#Aldo article {
+  background-color: #dbeafe; 
+  border-left: 5px solid #2a6db9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#Aldo img {
+  display: block;
+  margin: 0 auto 15px auto; /* Centra la imagen */
+  border: 3px solid #2a6db9;   /* Recuadro negro */
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #2a6db9;
+}
+
+#Aldo article h3 {
+  color: #1e40af;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+#Aldo article p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #222;
 }
 
 /* ASIDE */
 
 aside {
-  background-color: #ddd;
+  background-color: #80df9b;
   padding: 15px;
   border-radius: 10px;
+  border: 3px solid #217a3a; /* Recuadro verde oscuro */
+  box-shadow: 2px 2px 8px #217a3a;
 }
 
 /* TABLA */
